@@ -39,7 +39,7 @@ class ColourTable():
 	def __init__(self, name, num_scale = 1):
 		self.name = name
 		self.num_scale = num_scale
-		self.file_name = '/home/oli/src/mqtt_devices/fishtank_lights/' + name + '.json'
+		self.file_name = '/home/oli/src/mqtt_devices/mqtt_fishtank_lights/' + name + '.json'
 		with open(self.file_name) as data_file:
 			data = json.load(data_file)
 		data_samples = data['samples']
